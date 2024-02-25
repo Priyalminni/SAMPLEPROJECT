@@ -9,7 +9,7 @@ public class gdc {
             System.out.println("Enetr any no");
             int Second=input.nextInt();
             int gcd=gcd(first , Second);
-            System.out.println("gcd of "+first+"and"+Second+"are"+gcd);
+            System.out.println("gcd of "+first+"and"+Second+"is  " + gcd);
         }
         public static int gcd(int num1,int num2)
         {   
