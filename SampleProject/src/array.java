@@ -8,7 +8,8 @@ public class array {
     }
     System.out.println(a[2][1]);
    }
-   
+
 }
-//The nested loops initialize the matrix with values i + j, where i is the row index and j is the column index. So, matrix[2][1] will be 2 + 1, which is 3
+//The nested loops initialize the matrix with values i + j,
+// where i is the row index and j is the column index. So, matrix[2][1] will be 2 + 1, which is 3
 
