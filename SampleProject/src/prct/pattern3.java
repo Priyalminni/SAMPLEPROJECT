@@ -4,6 +4,7 @@ public class pattern3 {
     public static void main(String[] args) {
         pattern(5);
         pattern4(5);
+        pattern5(5);
     }
     static void pattern(int n){
         for (int row=1;row<=n;row++) {
@@ -25,8 +26,19 @@ public class pattern3 {
             System.out.println();
         }
     }
-     
-}
+    static void pattern5(int n ){
+        for(int row=1;row<=n;row++){
+            for (int col = 1;col <=row; col++) {
+                System.out.print(" ");
+                
+            }
+            for(int i= row;i<=n;i++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+}}
+
 /*
 
 1
@@ -34,5 +46,18 @@ public class pattern3 {
 123
 1234
 12345
+
+     *
+    **
+   ***
+  ****
+ *****
+
+ 
+ *****
+  ****
+   ***
+    **
+     *
 
  */
