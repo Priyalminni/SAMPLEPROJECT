@@ -3,6 +3,7 @@ package prct;
 public class pattern3 {
     public static void main(String[] args) {
         pattern(5);
+        pattern4(5);
     }
     static void pattern(int n){
         for (int row=1;row<=n;row++) {
@@ -12,8 +13,17 @@ public class pattern3 {
             System.out.println();
         }
     }
-    static void pattern4(int n ){
-        
+     static void pattern4(int n ){
+        for(int row=1;row<=n;row++){
+            for (int col = row;col <=n; col++) {
+                System.out.print(" ");
+                
+            }
+            for(int i= 1;i<=row;i++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
      
 }
