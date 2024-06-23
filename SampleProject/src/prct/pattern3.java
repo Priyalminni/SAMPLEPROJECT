@@ -3,7 +3,9 @@ package prct;
 public class pattern3 {
     public static void main(String[] args) {
         pattern(5);
+        System.out.println();
         pattern4(5);
+        System.out.println();
         pattern5(5);
     }
     static void pattern(int n){
@@ -53,7 +55,7 @@ public class pattern3 {
   ****
  *****
 
- 
+
  *****
   ****
    ***
