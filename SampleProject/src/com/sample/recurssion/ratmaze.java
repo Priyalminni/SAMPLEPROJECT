@@ -1,14 +1,14 @@
 package com.sample.recurssion;
 
 public class ratmaze {
-    // public static void main (String[] args){
-    //     int row=3;
-    //     int col=4;
-    //     int [][] arr={{1,0,1,1},
-    //                   {1,1,1,1},
-    //                   {1,1,0,1}};
-    //            print(0,0,row-1,col-1,"",arr);
-    // }
+    public static void main (String[] args){
+        int row=3;
+        int col=4;
+        int [][] arr={{1,0,1,1},
+                      {1,1,1,1},
+                      {1,1,0,1}};
+               print(0,0,row-1,col-1,"",arr);
+    }
 
     public static void print(int sr,int sc,int er,int ec,String s,int[][]arr){
       if(sr<0||sc<0) return ;

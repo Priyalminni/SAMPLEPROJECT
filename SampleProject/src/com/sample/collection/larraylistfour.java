@@ -21,6 +21,8 @@ public static void main(String[] args) {
 
     li.set(1, "black");
     
+
+    
     System.out.println("after-->"+li);
     System.out.println(li.remove(3));
     System.out.println(li.contains("red"));
