@@ -8,29 +8,30 @@ public class permutation {
     List<List<Integer>> list = new ArrayList<>();
 
     public static void main(String[] args) {
+        permutation obj = new permutation();
         int nums[]={1,2,3};
-        // permutation p = new permutation();
-        System.out.println(new permutation().permute(nums));
+        System.out.println(obj.permute(nums));
     }
 
         public List<List<Integer>> permute(int[] nums) {
-            
             backtrack(nums, 0);
             list.sort(new CustomComparator());
             return list;
         }
     
         public void backtrack(int[] nums, int index){
-            if(index==nums.length-1){
+            if(index==nums.length){
                 list.add(toList(nums));
             }
-            
-            for(int i=index; i<nums.length; i++){
-                swap(index, i, nums);
-                backtrack(nums, index+1);
-                swap(index, i, nums);
+            else{
+                for(int i=index;i<nums.length;i++){
+                    swap(index,i,nums);
+                    backtrack(nums,index+1);
+                    swap(index,i,nums);
+                }
             }
         }
+
         public static List<Integer> toList(int[] nums){
             ArrayList<Integer> l=new ArrayList<>();
             for(int n: nums){
@@ -38,6 +39,7 @@ public class permutation {
             }
             return l;
         }
+
         public static void swap(int m,int n,int[] nums){
             int temp=nums[m];
             nums[m]=nums[n];
